@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+
+  frontend:
+      build: ./client
+      container_name: frontend-container
+      ports: 
+        - "3000:3000"
+
+  backend:
+    build: ./server
+    container_name: backend_container
+
+
+
